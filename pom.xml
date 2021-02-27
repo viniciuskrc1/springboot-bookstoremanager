@@ -92,6 +92,11 @@
 			<plugin>
 				<groupId>pl.project13.maven</groupId>
 				<artifactId>git-commit-id-plugin</artifactId>
+				<configuration>
+					<verbose>true</verbose>
+					<failOnNoGitDirectory>false</failOnNoGitDirectory>
+					<dotGitDirectory>${project.basedir}/.git</dotGitDirectory>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
